@@ -9,9 +9,10 @@ const OptionModal = (props) => (
         className='modal'
         onRequestClose={props.closeModal}
     >
-        <h3 className='modal__title'>Selected Option</h3>
-        {props.selectedOption && <p className='modal__body'>{props.selectedOption}</p>}
-        <button className='button' onClick={props.closeModal}> OKAY</button>
+        <h4 className='modal__title'>There’s nothing wrong with thinking through options before making a decision.</h4>
+        <p>Remember, if things don’t work out how you hope, you can always try something else!</p>
+        {props.selectedOption && <h2 className='modal__body'>{props.selectedOption}</h2>}
+        <button className='button' onClick={props.closeModal}>Okay</button>
 
     </Modal>
 );

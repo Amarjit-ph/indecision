@@ -1,8 +1,8 @@
 .header{
-    background: $off-black;
+    background: white;
     margin-bottom: $m-size;
     padding: $m-size 0;
-    color: white;
+    color: black;
 }
 
 //BEM BLoCK element modifier
@@ -12,10 +12,11 @@
 
 }
 .header__subtitle{
-    color: $off-white;
+    color: black;
     font-size: $m-size;
     font-weight:500;
     margin: 0;
+
 }
 
 @media(min-width:$desktop-breakpoint){

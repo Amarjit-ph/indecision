@@ -1,5 +1,11 @@
+/*
+ * Author: Amarjit Pheiroijam
+ * OS : Zorin OS 16 Core
+ * Editor : Visual Studio Code 1.64.0
+ * Created Date: Monday, February 7th 2022, 12:57:18 pm
+ * Year 2022
+ */
 import React from 'react';
-
 import AddOption from './AddOption';
 import Options from './Options';
 import Action from './Action';
@@ -50,21 +56,15 @@ export default class IndecisionApp extends React.Component {
         }));
 
     }
-
-
-
     handleAddOption = (option) => {
-        //FORM VALIDATION
+        /// FORM VALIDATION
         if (!option) {
-            return "Enter Vaild Value to add Item";
+            return "Enter valid value to add Item";
         } else if (this.state.options.indexOf(option) > -1) {
             return "This Item Already Exist";
         }
         this.setState((prevS) => ({ options: prevS.options.concat(option) }))
     }
-
-
-
     //LIFE CYCLE METHODS
     componentDidMount() {
         try {
@@ -91,9 +91,9 @@ export default class IndecisionApp extends React.Component {
     }
 
 
-    // RENDER
+    /// RENDER
     render() {
-        const subtitle = "Put your life in the hands of a computer";
+        const subtitle = "Pay Attention to Your Emotions & trust the computer";
         //const options = ["One thing", "Two thing", "Three things"];
         return (
             <div>
