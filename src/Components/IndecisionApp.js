@@ -93,7 +93,7 @@ export default class IndecisionApp extends React.Component {
 
     /// RENDER
     render() {
-        const subtitle = "Pay Attention to Your Emotions & trust the computer";
+        const subtitle = "Pay Attention to Your Emotions & trust the randomness of Binary system";
         //const options = ["One thing", "Two thing", "Three things"];
         return (
             <div>
